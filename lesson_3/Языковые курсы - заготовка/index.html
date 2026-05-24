@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Языковые курсы</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_records.css">
+</head>
+<body>
+    <div class="container">
+        <div class="panel">
+            <img src="logo_cats.png" alt="logo">
+            <h1>Языковые курсы</h1>
+        </div>
+
+        <form id="form" class="form-group">
+            <div class="input-group">
+                <label for="name">Ваше имя</label>
+                <input type="text" name="name" id="name" placeholder="Введите ваше имя" required>
+            </div>
+            <div class="input-group">
+                <label for="surname">Ваша фамилия</label>
+                <input type="text" name="surname" id="surname" placeholder="Введите вашу фамилию" required>
+            </div>
+            <div class="input-group">
+                <label for="age">Ваш возраст</label>
+                <input type="number" name="age" id="age" placeholder="Введите ваш возраст" required>
+            </div>
+            <div class="input-group group-horizontal">
+                <div class="half-width">
+                    <label for="time">Выберите время урока</label>
+                    <input type="time" name="time" id="time" required>
+                </div>
+                <div class="half-width">
+                    <label for="date">Выберите дату урока</label>
+                    <input type="date" name="date" id="date" required>
+                </div>
+            </div>
+            <button type="submit" class="btn submit-button">Записаться</button>
+        </form>
+
+        <div class="previous-registrations">
+            <p>Предыдущие регистрации</p>
+            <span id="no-records">Нет предыдущих записей</span>
+            <div id="records-list"></div>
+        </div>
+    </div>
+
+    <div class="navigation-button-container">
+        <button class="btn back-button">Назад</button>
+    </div>
+	<script src="script.js"></script>
+</body>
+</html>
